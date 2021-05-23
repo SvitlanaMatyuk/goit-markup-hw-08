@@ -1,0 +1,38 @@
+.work-types {
+  display: flex;
+  justify-content: center;
+}
+.work-types__list {
+  margin-bottom: 50px;
+}
+.work-types__item {
+  margin-left: 0;
+  margin-right: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.work-types__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: var(--main-text-color);
+  background-color: var(--button-backgr-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--alter-text-color);
+    background-color: var(--hov-color);
+  }
+}

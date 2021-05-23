@@ -1,0 +1,19 @@
+.contacts-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link-address {
+  color: var(--parag-text-color);
+}
+.contacts-header__svg {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts-header__item {
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0;
+  }
+}

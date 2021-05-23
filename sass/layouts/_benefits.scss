@@ -1,0 +1,29 @@
+.benefits {
+  padding-bottom: 0;
+}
+.benefits__item {
+  flex-basis: calc((100% - 4 * 30px) / 4);
+  &::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+    background-color: var(--button-backgr-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}
+.benefits__item--antenna::before {
+  background-image: url(../images/icons/feture-icons/antenna1.svg);
+}
+.benefits__item--clock::before {
+  background-image: url(../images/icons/feture-icons/clock1.svg);
+}
+.benefits__item--diag::before {
+  background-image: url(../images/icons/feture-icons/diagram1.svg);
+}
+.benefits__item--ast::before {
+  background-image: url(../images/icons/feture-icons/astronaut1.svg);
+}
