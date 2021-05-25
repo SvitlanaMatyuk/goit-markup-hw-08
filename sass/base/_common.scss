@@ -11,9 +11,9 @@ h3,
 h4 {
   margin-top: 0;
 }
-* {
-  outline: 1px solid red;
-}
+// * {
+//   outline: 1px solid red;
+// }
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -33,15 +33,15 @@ img {
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(189, 203, 245);
+    // background-color: rgb(189, 203, 245);
   }
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    background-color: rgb(184, 231, 184);
+    // background-color: rgb(184, 231, 184);
   }
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-    background-color: yellow;
+    // background-color: yellow;
   }
 }
 .list {
