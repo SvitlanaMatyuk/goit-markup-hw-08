@@ -1,19 +1,36 @@
 .subscript {
-  padding-top: 8px;
+  padding-top: 0px;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    // padding-top: 8px;
+  }
 }
 .subscript__thumb {
-  margin-left: 93px;
+  margin-top: 60px;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+  }
 }
 
 .subscript__form {
   margin-top: 20px;
-  display: flex;
+  display: block;
+  // align-items: center;
   & > input {
-    width: 358px;
+    width: 100%;
     height: 50px;
-    margin-right: 12px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -28,6 +45,19 @@
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (min-width: 768px) {
+    & > input {
+      max-width: 450px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    & > input {
+      width: 358px;
+      margin-right: 12px;
+    }
   }
 }
 
@@ -52,4 +82,12 @@
   cursor: pointer;
 
   color: var(--hov-link-color);
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }

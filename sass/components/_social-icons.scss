@@ -38,10 +38,25 @@
 .socials {
   align-items: center;
   justify-content: center;
-  padding-top: 12px;
 }
+
+@media screen and (min-width: 1200px) {
+  // padding-top: 12px;
+}
+
 .socials__list {
-  margin-left: 70px;
+  margin-left: 0px;
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+    margin-left: 70px;
+  }
 }
 
 .social-icons__list--foot {

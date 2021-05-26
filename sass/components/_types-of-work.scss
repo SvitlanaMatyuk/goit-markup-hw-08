@@ -1,3 +1,9 @@
+.types-of-work {
+  @media screen and (min-width: 0px) and (max-width: 1199.99px) {
+    display: none;
+  }
+}
+
 .types-of-work__item {
   flex-basis: calc((100% - 3 * 30px) / 3);
 }

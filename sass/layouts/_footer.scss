@@ -7,9 +7,36 @@
   background-color: var(--dark-backgr-color);
 }
 .footer {
-  display: flex;
+  display: block;
+
+  @media screen and (min-width: 100px) and (max-width: 767.98px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.footer-thumb {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
 }
 
+.address-thumb {
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    width: 231px;
+  }
+}
 .footer__par {
   text-transform: uppercase;
   font-weight: bold;
@@ -18,4 +45,12 @@
   letter-spacing: 0.03em;
 
   color: var(--alter-text-color);
+
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
