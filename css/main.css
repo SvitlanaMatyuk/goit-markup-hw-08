@@ -1415,8 +1415,8 @@ textarea::placeholder {
 }
 
 .form__policy-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -1437,6 +1437,13 @@ textarea::placeholder {
   transition: bbackground-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .form__policy-text::before {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .checkbox:checked + .form__policy-text::before {
   background-color: var(--hov-color);
   background-image: url(../images/icons/modals-icons/icon-check.svg);
@@ -1444,12 +1451,12 @@ textarea::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   block-size: contain;
-  transition: background-color 2505ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__policy-link {
   color: var(--hov-color);
-  margin-left: 4px;
+  margin-left: 2px;
 }
 
 .backdrop {
@@ -1482,11 +1489,18 @@ textarea::placeholder {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: auto;
   background-color: var(--alter-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-form {

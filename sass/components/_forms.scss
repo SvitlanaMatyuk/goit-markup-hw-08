@@ -89,8 +89,8 @@ textarea {
   text-align: center;
 }
 .form__policy-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -107,6 +107,11 @@ textarea {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: bbackground-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
   .checkbox:checked + &::before {
     background-color: var(--hov-color);
@@ -116,10 +121,10 @@ textarea {
     background-position: center;
     block-size: contain;
 
-    transition: background-color 2505ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .form__policy-link {
   color: var(--hov-color);
-  margin-left: 4px;
+  margin-left: 2px;
 }
