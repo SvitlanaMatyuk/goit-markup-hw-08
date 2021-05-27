@@ -7,6 +7,11 @@
 }
 .list-nav {
   display: inline-flex;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-right: auto;
+    margin-left: 88px;
+  }
 }
 .list-nav__item {
   margin-right: 50px;
@@ -57,4 +62,22 @@
 }
 .list-nav__link-address {
   color: var(--parag-text-color);
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    padding-top: 0px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+.list-nav-tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: block;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
 }

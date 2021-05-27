@@ -2,6 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: block;
+  }
 }
 .link-address {
   color: var(--parag-text-color);
@@ -14,6 +18,10 @@
 .contacts-header__item {
   margin-right: 50px;
   &:last-child {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     margin-right: 0;
   }
 }
