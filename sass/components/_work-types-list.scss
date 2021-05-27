@@ -1,18 +1,30 @@
 .work-types {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 .work-types__list {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 .work-types__item {
   margin-left: 0;
   margin-right: 8px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 15px;
   padding: 0;
   &:last-child {
     margin-right: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
   }
 }
 
