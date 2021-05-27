@@ -540,7 +540,7 @@ img {
 
 .section-hero {
   background-color: var(--dark-backgr-color);
-  max-width: 480px;
+  min-width: 280px;
   height: 400px;
   padding-bottom: 118px;
   padding-top: 118px;
@@ -548,12 +548,13 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-photo/hero-photo.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header_mob_x1.jpg);
 }
 
 @media screen and (min-width: 768px) {
   .section-hero {
-    max-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header_tab_x1.jpg);
+    max-width: 1199.98px;
   }
 }
 
@@ -563,6 +564,7 @@ img {
     min-height: 600px;
     padding-bottom: 200px;
     padding-top: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header_desc_x1.jpg);
   }
 }
 
@@ -1300,6 +1302,12 @@ img {
   background: #ffffff;
   border: 1px solid #eeeeee;
   border-top: 0;
+}
+
+@media screen and (min-width: 796px) {
+  .pr-first {
+    padding-bottom: 56px;
+  }
 }
 
 .projects__name {

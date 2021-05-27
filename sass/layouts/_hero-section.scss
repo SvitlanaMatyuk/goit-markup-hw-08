@@ -1,6 +1,6 @@
 .section-hero {
   background-color: var(--dark-backgr-color);
-  max-width: 480px;
+  min-width: 280px;
   height: 400px;
   padding-bottom: 118px;
   padding-top: 118px;
@@ -13,10 +13,16 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero-bg-photo/hero-photo.jpg);
+    url(../images/header_mob_x1.jpg);
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header_tab_x1.jpg);
+    max-width: 1199.98px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -24,6 +30,13 @@
     min-height: 600px;
     padding-bottom: 200px;
     padding-top: 200px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header_desc_x1.jpg);
   }
 }
 .section-hero__element {

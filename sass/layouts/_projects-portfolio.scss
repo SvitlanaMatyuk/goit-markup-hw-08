@@ -72,6 +72,11 @@
   border: 1px solid #eeeeee;
   border-top: 0;
 }
+@media screen and (min-width: 796px) {
+  .pr-first {
+    padding-bottom: 56px;
+  }
+}
 
 .projects__name {
   font-size: 18px;
