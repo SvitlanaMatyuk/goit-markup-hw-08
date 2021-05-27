@@ -1,12 +1,21 @@
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: #2196f3;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .header-container__logo {
-  margin-right: 93px;
+  // margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 .header-container__logo-item {
   color: #000000;
